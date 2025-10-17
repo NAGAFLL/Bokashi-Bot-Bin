@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bokashi Bot Bin</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="logo.png">
+        <div class="logo"></div>
+        <h1>Bokashi Bot Bin</h1>
+      </a>
+      <nav class="nav-links">
+        <a href="#intro">Home</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#Reviews">Awareness & Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="intro">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="kicker">Unearth for mother earth</span>
+        <h2 class="title">Unearth For Mother Earth</h2>
+        <p class="subtitle">Discover the impacts of methane emmisions to the planet Earth and how composting can prevent it.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#benefits">Learn More</a>
+          <a class="primary" href="#Reviews">Get Involved</a>
+          <a class="primary" href="#contact">Contact Us</a> 
+        </div>
+      </div>
+      <div class="hero-art" style="padding:0; border:none; box-shadow:none;">
+        <img src="logo.png" alt="Bokashi bin" style="width:100%; height:auto; object-fit:fill;" />
+      </div>
+    </div>
+  </section>
+  <section id="Problem">
+    <div class="wrap">
+      <h2 class="section-title">The Problem</h2>
+      <p class="section-lead">The Problem: Methane a potent greenhouse gas, is released from organic waste when dumped in landfills. 
+          <h3>Current Handling</h3>
+          <p class="meta">Current Handling: Currently, people like the city of San Diego introduced a compost bin for anyone but it does not work most of the time. </p>
+        <div class="card">
+          <h3>Our Idea</h3>
+          <p class="meta">We are making a bokashi bin which has sensor and wifi capabilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Benefits Section -->
+  <section id="benefits">
+    <div class="wrap">
+      <h2 class="section-title">Why Bokashi Matters</h2>
+      <p class="section-lead">This solution addresses a critical modern problem: Methane emissions and complicated composting.</p>
+</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>More info</h3>
+          <p class="meta">Our solution addresses the issue of methane emmsions and the struggle people have while composting.</p>
+        </div>
+        <div class="card">
+          <h3>Eco-Friendly</h3>
+          <p class="meta">It reduces organic waste and helps plants grow</p>
+        </div>
+        <div class="card">
+          <h3>Simpler</h3>
+          <p class="meta">Helps people composts and catches problems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  
+
+  <!-- Awareness & Reviews Section -->
+  <section id="contact">
+    <div class="wrap">
+      <h2 class="section-title">Join the Movement</h2>
+      <p class="section-lead">Share your thoughts, reviews, or questions about self-healing concrete. Your message will appear publicly below.</p>
+
+      <form class="card" id="contactForm">
+        <input type="text" name="name" id="name" placeholder="Your Name" required />
+        <textarea name="message" id="message" rows="3" placeholder="Your Message" required></textarea>
+        <button class="primary" type="submit">Post Message</button>
+      </form>
+
+      <!-- Message Display Area -->
+      <div id="messages" class="message-bubbles">
+        <!-- Messages will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!-- External JS -->
+  <script src="form-handler.js"></script>
+  <h3>If you have any question or want to learn more Contact us at (Put email)</h3>
+  <h3>Donate to us at (Venmo user)</h3>
+</body>
+</html>
